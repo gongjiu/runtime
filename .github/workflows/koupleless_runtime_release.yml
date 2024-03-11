@@ -45,6 +45,7 @@ jobs:
         with:
           repository: 'koupleless/samples'
           path: 'testsample'
+          ref: gongjiu_311
 
       - name: get koupleless-runtime version & update koupleless-runtime version for all test sample app
         run: |
