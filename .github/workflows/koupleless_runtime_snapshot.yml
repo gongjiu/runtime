@@ -66,6 +66,7 @@ jobs:
           sudo systemctl start redis-server
           docker-compose  -f samples/springboot-samples/config/apollo/config/docker-compose.yml up -d
           sudo cp .github/workflows/ccbin/arkctl /usr/bin/arkctl 
+          sudo chmod +x /usr/bin/arkctl 
 
       - name: Run jdk8 koupleless runtime test
         run: |
